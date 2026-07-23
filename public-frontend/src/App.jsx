@@ -13,7 +13,6 @@ const PageView = () => {
   useEffect(() => {
     const fetchPage = async () => {
       try {
-        // If the user visits the root path '/', default to the 'home' slug
         const currentSlug = slug || 'home';
         const res = await axios.get(`http://localhost:5000/api/pages/${currentSlug}`);
         setPageData(res.data);
