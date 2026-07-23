@@ -6,7 +6,7 @@ services:
     ports:
       - "5000:5000"
     env_file:
-      - ./backend/.env  # This tells Docker exactly where to find your variables
+      - ./backend/.env  # <-- This is the crucial change!
 
   admin-frontend:
     build: ./admin-frontend
