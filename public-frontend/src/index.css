@@ -1,0 +1,63 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.block-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.block-paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.block-list {
+  margin-left: 20px;
+  margin-bottom: 1rem;
+}
+
+.block-equation {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.block-table-container {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.block-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.block-table th, .block-table td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.block-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}

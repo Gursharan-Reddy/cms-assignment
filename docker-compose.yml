@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./backend/.env  # This tells Docker exactly where to find your variables
+
+  admin-frontend:
+    build: ./admin-frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:5000/api
+    depends_on:
+      - backend
+
+  public-frontend:
+    build: ./public-frontend
+    ports:
+      - "5174:5173"
+    environment:
+      - VITE_API_URL=http://localhost:5000/api
+    depends_on:
+      - backend
